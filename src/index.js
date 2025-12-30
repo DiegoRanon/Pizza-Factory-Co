@@ -65,7 +65,7 @@ function App() {
 function Pizza({ name, ingredient, photoName, price, soldOut }) {
   return (
     <div className={`pizza ${soldOut ? "sold-out" : ""}`}>
-      <img src={photoName} alt="Pizza spinaci" />
+      <img src={`${process.env.PUBLIC_URL}/${photoName}`} alt={name} />
       <div>
         <h3>{name}</h3>
         <p>{ingredient}</p>
@@ -98,6 +98,7 @@ function Menu() {
             {pizzaData.map((p) => {
               return (
                 <Pizza
+                  key={p.name}
                   name={p.name}
                   ingredient={p.ingredients}
                   photoName={p.photoName}
@@ -307,7 +308,10 @@ function OrderModal({ onClose }) {
                   className={`order-item ${pizza.soldOut ? "disabled" : ""}`}
                 >
                   <div className="order-item-info">
-                    <img src={pizza.photoName} alt={pizza.name} />
+                    <img
+                      src={`${process.env.PUBLIC_URL}/${pizza.photoName}`}
+                      alt={pizza.name}
+                    />
                     <div>
                       <h4>{pizza.name}</h4>
                       <p className="ingredients">{pizza.ingredients}</p>

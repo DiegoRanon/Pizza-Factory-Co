@@ -10,7 +10,7 @@
 - 🧩 **Component-Based Architecture** – Functional components like `Menu`, `Pizza`, `Footer`, and `Order`
 - ❌ **Sold Out State** – Visually indicates when a pizza is no longer available
 - ⏰ **Conditional Rendering by Time** – Footer displays different messages based on opening hours
-- 💻 **Responsive Layout** *(basic styling applied via CSS)*
+- 💻 **Responsive Layout** _(basic styling applied via CSS)_
 
 ---
 
@@ -43,9 +43,26 @@
   ├── index.css       # Basic styling
   └── App components  # All components in one file for simplicit
 ```
+
 ---
 
+## ▲ Deploy to Vercel
+
+This project is a **Create React App** and is ready to deploy as a static site.
+
+- **Build Command**: `npm run build`
+- **Output Directory**: `build`
+
+These are already configured in `vercel.json`, so Vercel should auto-pick them up.
+
+### Steps
+
+1. Push this repo to GitHub/GitLab/Bitbucket.
+2. In Vercel, click **Add New → Project** and import the repo.
+3. Deploy (no extra settings needed).
+
 ## 🧠 What I Learned
+
 Structuring UI using reusable components
 
 Mapping arrays to dynamically render content
@@ -57,6 +74,7 @@ Creating simple UI logic based on date/time
 Handling static assets like images in React
 
 ## 👨‍💻 Author
+
 Diego Ranon
 React Developer in training, passionate about building interactive and responsive web applications.
 LinkedIn (https://www.linkedin.com/in/diego-ranon-986b0120a/)
@@ -64,12 +82,11 @@ LinkedIn (https://www.linkedin.com/in/diego-ranon-986b0120a/)
 ---
 
 Want me to:
+
 - Add GitHub badges (React, CSS, MIT License, etc.)?
 - Create a French version?
 - Help split your components into separate files for scalability?
 
 Let me know, I’ve got you!
 
-
 ---
-
